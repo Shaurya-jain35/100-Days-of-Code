@@ -1,31 +1,26 @@
-//  Q11: Write a program to input an integer and check whether it is even or odd using if–else.
+// Q5: Write a program to convert temperature from Celsius to Fahrenheit.
 
 /*
 Sample Test Cases:
 Input 1:
-7
+0
 Output 1:
-7 is odd
+Fahrenheit=32
 
 Input 2:
-12
+100
 Output 2:
-12 is even
+Fahrenheit=212
 
 */
 
 #include<stdio.h>
 int main(){
-    int N;;
-    printf("Enter a number : ");
-    scanf("%d", &N);
+    int celsius;
+    printf("Enter celsius : ");
+    scanf("%d", &celsius);
 
-    if(N%2==0){
-        printf("N is even");
-    }
-    else {
-        printf("N is odd");
+    printf("Fahrenheit = %.0f\n", (celsius * 1.8) + 32);
 
-    }
     return 0;
 }
